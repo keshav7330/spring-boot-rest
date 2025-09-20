@@ -71,3 +71,8 @@ The base URL for running the API locally is `http://localhost:8080`.
 
 * This project now uses **Spring Data JPA** for persistent storage, which is a major upgrade from the previous in-memory list.
 * The default database is **H2**, which creates the database in memory and is perfect for development and testing. This can be easily swapped out for a production database like PostgreSQL or MySQL by changing the dependencies and `application.properties` file.
+
+**Database Credentials:**
+- The database password is stored in an **environment variable** `DB_PASSWORD`.
+- Locally, you can set it in IntelliJ Run Configuration or using a `.env` file.
+- For production, use a strong, secure password.
